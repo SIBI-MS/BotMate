@@ -2,3 +2,5 @@ langchain
 streamlit
 python-dotenv
 fitz
+sentence_transformers
+chromadb

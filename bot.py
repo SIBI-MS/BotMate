@@ -15,8 +15,8 @@ with tab1:
                 if "vector_store" not in st.session_state:  
                     document= get_documentdata(pdf_docs) 
                     document_chunks=get_document_chunks(document)
-                    document_embeddings=get_document_embedding(document_chunks)  
-                    st.session_state.document_vector_store=get_vector_store(document_embeddings)
+                    embeddings=get_document_embedding()  
+                    st.session_state.document_vector_store=get_vector_store(embeddings,document_chunks)
                     # vector_store=get_store_embeddings(document_embedding)              
     
     if pdf_docs:
