@@ -4,3 +4,5 @@ python-dotenv
 fitz
 sentence_transformers
 chromadb
+pymupdf
+PyPDF2
